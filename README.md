@@ -2,7 +2,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Purpose
 
-This project exists to provide a Proof of Concept for integrating code quality tools into a Circle-based CI pipeline. 
+This project exists to provide a Proof of Concept for integrating code quality tools into a Circle-based CI pipeline.
+
+👋 Hi Sean. No I did not check in my node_modules this time.
 
 ## Available Scripts
 
