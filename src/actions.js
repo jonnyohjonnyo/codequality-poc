@@ -1,5 +1,6 @@
 const Types = {
-    SELECT_ANSWER: "SELECT_ANSWER"
+    SELECT_ANSWER: "SELECT_ANSWER",
+    START_GAME: "START_GAME",
 };
 // actions
 const selectAnswer = answer => ({
