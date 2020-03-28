@@ -8,7 +8,7 @@ function App() {
         <div>
           <span role="img" aria-label="waving hand">👋</span>&nbsp;Code Quality POC
         </div>
-        <div className="App-secondary">Code repository</div>
+        <div className="App-secondary">Code reeepository</div>
       </section>
     </div>
   );
