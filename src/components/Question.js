@@ -14,7 +14,7 @@ const Component = ({ question, handler, lastAnswer }) => {
     });
     return (
         <main>
-            <div>{seansResponses[lastAnswer]}</div>
+            <h4>{seansResponses[lastAnswer]}</h4>
             <div>{question.text}</div>
             {buttons}
         </main>

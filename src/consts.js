@@ -3,15 +3,15 @@ export const questions = [
         text: 'While working in a code repository you have not worked before, you notice there is an error in the documentation. Do you:',
         answers: [
             {
-                text: 'Finish your work, then open a PR to fix the documentation',
+                text: 'Finish your work, then open a PR to fix the documentation.',
                 seansMoodChangesBy: 1,
             },
             {
-                text: 'Finish your work, then let the owners of the repo know about the error',
+                text: 'Finish your work, then let the owners of the repo know about the error.',
                 seansMoodChangesBy: 0,
             },
             {
-                text: 'Finish your work, then move on. You have more work to do, and the owners of the repo should maintain their own documentation',
+                text: 'Finish your work, then move on. You have more work to do, and the owners of the repo should maintain their own documentation.',
                 seansMoodChangesBy: -1,
             }
         ]
@@ -20,21 +20,21 @@ export const questions = [
         text: 'You are working on a Jira ticket when you realize that the problem is not clearly defined. Do you:',
         answers: [
             {
-                text: 'Reach out to your teammates to open a conversation about the problem, then record the clarified problem statement in the ticket',
+                text: 'Reach out to your teammates to open a conversation about the problem, then record the clarified problem statement in the ticket.',
                 seansMoodChangesBy: 1,
             },
             {
-                text: 'Edit the ticket on your own, based on your understanding of the problem',
+                text: 'Edit the ticket on your own, based on your understanding of the problem.',
                 seansMoodChangesBy: 0,
             },
             {
-                text: 'Keep working on the ticket. Someone else will figure this out at the end of the sprint',
+                text: 'Keep working on the ticket. Someone else will figure this out at the end of the sprint.',
                 seansMoodChangesBy: -1,
             }
         ]
     },
     {
-        text: 'Everyone in the community is using this new library. I solves a problem that your current codebases solves with an older library. Do you:',
+        text: 'Everyone in the community is using this new library. It solves a problem that your current codebases solves with an older library. Do you:',
         answers: [
             {
                 text: 'Write a document describing the pros and cons of using the new library, along with the cost of switching. Share the document with others to get feedback.',
