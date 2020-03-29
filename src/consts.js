@@ -67,6 +67,108 @@ export const questions = [
             }
         ]
     },
+    {
+        text: "You notice a problem in a codebase. The problem appears to have been there for a while, and while it doesn't appear to affect users, you suspect that something isn't right.",
+        answers: [
+            {
+                text: 'Timebox an exploration of the problem space. Write up a summary of your findings, then discuss it and next steps with a teammate.',
+                seansMoodChangesBy: 1,
+            },
+            {
+                text: 'File the problem away in your memory for if you see it again, then move on for now.',
+                seansMoodChangesBy: 0,
+            },
+            {
+                text: "Post about it in engineering or incident-response so everyone knows about it.",
+                seansMoodChangesBy: -1,
+            }
+        ]
+    },
+    {
+        text: "You have an idea for a new feature, or a twist on an existing one. Do you:",
+        answers: [
+            {
+                text: 'Write out a problem statement and the value a solution would bring to the user. Share it with a member of Product or UX for feedback.',
+                seansMoodChangesBy: 1,
+            },
+            {
+                text: 'Create a toy app or component set, showing what your new feature might look like. Share it with a member of Product or UX for feedback.',
+                seansMoodChangesBy: 1,
+            },
+            {
+                text: "Move on with your day. Nobody's going to care about your ideas anyway.",
+                seansMoodChangesBy: -1,
+            }
+        ]
+    },
+    {
+        text: "You're in a meeting when you realize there wasn't a clear agenda, and the meeting is rabbit holing into an obscure nuance of the problem being discussed. You:",
+        answers: [
+            {
+                text: 'Go to the whiteboard and help the group articulate and visualize the problem or opportunity space',
+                seansMoodChangesBy: 1,
+            },
+            {
+                text: 'Vote with your feet and excuse yourself from the meeting',
+                seansMoodChangesBy: 0,
+            },
+            {
+                text: "Open your laptop and respond to one of your 7 unread slacks or 21 unread emails",
+                seansMoodChangesBy: -1,
+            }
+        ]
+    },
+    {
+        text: "You're in the zone and making good progress on a difficult problem when you get a slack from that engineering manager of yours. You:",
+        answers: [
+            {
+                text: 'Give yourself a timebox to finish your current thread and set the precedent that immediate responses are not your SLA',
+                seansMoodChangesBy: 1,
+            },
+            {
+                text: "Respond immediately, it's probably something important",
+                seansMoodChangesBy: -1,
+            },
+            {
+                text: "Ignore it, it's probably nothing important",
+                seansMoodChangesBy: -1,
+            }
+        ]
+    },
+    {
+        text: "A teammate asks for help understanding an aspect of the business domain that you know well. You:",
+        answers: [
+            {
+                text: 'Gently point them to the documentation you and others have created, with a reminder that searching confluence, paper and slack often yields good results.',
+                seansMoodChangesBy: 1,
+            },
+            {
+                text: "Offer to take on the ticket they're working on yourself, since you have the expertise in this area",
+                seansMoodChangesBy: -1,
+            },
+            {
+                text: "Setup a meeting with everyone who knows about the subject",
+                seansMoodChangesBy: -1,
+            }
+        ]
+    },
+    {
+        text: "You and your team have just made an important architectural decision. Next, you:",
+        answers: [
+            {
+                text: 'Create a decision record, clearly stating why the decision was made. Socialize the decision record amongst those affected by the decision',
+                seansMoodChangesBy: 1,
+            },
+            {
+                text: "Start taking action on the decision immediately",
+                seansMoodChangesBy: 0,
+            },
+            {
+                text: "Proclaim the decision to most of the people who need to know",
+                seansMoodChangesBy: -1,
+            }
+        ]
+    },
 ];
 
 export const WELCOME = 'WELCOME';
