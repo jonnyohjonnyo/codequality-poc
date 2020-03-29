@@ -64,3 +64,11 @@ button:focus {
   align-items: center;
   justify-content: center;
 }
+
+footer {
+  width: 60%;
+}
+
+.fine-print {
+  font-size: 5px;
+}

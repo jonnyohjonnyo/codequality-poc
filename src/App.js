@@ -32,7 +32,12 @@ function App() {
     <div className="App App-body">
       {displays[gameState]}
       <Sean mood={seansMood} />
-      <footer className="App-secondary"><a href="https://github.com/jonnyohjonnyo/codequality-poc">Code repository</a></footer>
+      <footer className="App-secondary">
+        <p><a href="https://github.com/jonnyohjonnyo/codequality-poc">Code repository</a></p>
+        <p className="fine-print">
+          Fine print: Images and names used in this application are fictional and for entertainment purposes only. The real Sean is not affiliated with nor did dhe give permission for this application to be developed. Any resemblance to the real Sean is purely accidental. Please consider signing the change.org petition to prevent the author of this web application from perpetuating silliness like this on the public internet. Approximate time taken to develop this app: 4 hours, including at least 1 hour horizontally centering things.
+        </p>
+      </footer>
     </div>
   );
 }
