@@ -29,6 +29,7 @@ const todoReducer = (state = defaultState, action) => {
             return {
                 ...state,
                 questionsToBeAsked: state.questionsToBeAsked.slice(0, -1),
+                seansMood: state.seansMood + action.data.moodEffect
             };
         }
         default:

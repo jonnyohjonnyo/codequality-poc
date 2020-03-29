@@ -4,7 +4,7 @@ const Component = ({ question, handler }) => {
     const { answers } = question;
     const buttons = [];
     answers.forEach((answer) => {
-        buttons.push(<button onClick={handler} key={answer.text}>{answer.text}</button>)
+        buttons.push(<button onClick={handler.bind(this, answer.seansMoodChangesBy)} key={answer.text}>{answer.text}</button>)
     });
     return (
         <main>
