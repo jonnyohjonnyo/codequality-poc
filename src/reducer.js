@@ -13,6 +13,7 @@ const generateQuestionOrder = () => {
 const defaultState = {
     questions,
     questionsToBeAsked: generateQuestionOrder(),
+    answers: [],
     seansMood: 0,
     onScreen: WELCOME,
 };
@@ -29,7 +30,8 @@ const todoReducer = (state = defaultState, action) => {
             return {
                 ...state,
                 questionsToBeAsked: state.questionsToBeAsked.slice(0, -1),
-                seansMood: state.seansMood + action.data.moodEffect
+                seansMood: state.seansMood + action.data.moodEffect,
+                answers: [...state.answers, action.data.moodEffect],
             };
         }
         default:
