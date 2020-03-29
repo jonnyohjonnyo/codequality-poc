@@ -1,17 +1,44 @@
+import _ from 'lodash';
+
 import ACTIONS from "./actions";
 
-import { questions, WELCOME } from "./consts.js";
+import { questions, WELCOME } from "./constants";
+
+const generateQuestions = () => {
+    const freshQuestionSet = _.cloneDeep(questions);
+    _.forEach(freshQuestionSet, question => {
+        // shuffle answers in fun(ny) way
+        const newAnswers = [];
+        while (question.answers.length > 0) {
+            const answerToShuffle = question.answers.pop();
+            const coinFlip = _.random(2);
+            if (coinFlip === 0) {
+                newAnswers.unshift(answerToShuffle);
+            } else {
+                newAnswers.push(answerToShuffle);
+            }
+        }
+        question.answers = newAnswers;
+    });
+    return freshQuestionSet;
+}
 
 const generateQuestionOrder = () => {
+    const allQuestions = [];
     const questionOrder = [];
     for (let i = 0; i < questions.length; i++) {
-        questionOrder.push(i);
+        allQuestions.push(i);
+    }
+    for (let i = 0; i < questions.length; i++) {
+        const nextQuestion = _.sample(allQuestions);
+        _.pull(allQuestions, nextQuestion);
+        questionOrder.push(nextQuestion);
     }
     return questionOrder;
 }
 
 const defaultState = {
-    questions,
+    questions: generateQuestions(),
     questionsToBeAsked: generateQuestionOrder(),
     answers: [],
     seansMood: 0,

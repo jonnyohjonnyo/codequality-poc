@@ -23,7 +23,7 @@ function App() {
   const displays = {
     WELCOME: <Welcome handler={() => dispatch({ type: ACTIONS.Types.START_GAME })} />,
     QUESTIONS: <Question lastAnswer={lastAnswer} handler={(value) => dispatch({ type: ACTIONS.Types.SELECT_ANSWER, data: { questionId, moodEffect: value } })} question={question} />,
-    GOODBYE: <h1>Bye</h1>,
+    GOODBYE: <h1>That's all the questions we have. Please refresh to play again.</h1>,
     WINNER: <h1>Congratulations, you've made Sean happy!</h1>,
     LOSER: <h1>You've made Sean very unhappy. Please refresh to play again.</h1>,
   };

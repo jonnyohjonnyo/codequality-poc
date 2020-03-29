@@ -1,6 +1,8 @@
 import _ from 'lodash';
 
-import { WELCOME, QUESTIONS, GOODBYE, WINNER, LOSER, WINNING_SCORE, LOSING_SCORE } from './consts';
+import { WELCOME, QUESTIONS, GOODBYE, WINNER, LOSER, WINNING_SCORE, LOSING_SCORE } from './constants';
+
+export const getQuestions = (state => state.questions);
 
 export const getOnScreen = (state => state.onScreen);
 
