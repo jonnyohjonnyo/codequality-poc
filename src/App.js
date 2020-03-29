@@ -16,25 +16,25 @@ import * as selectors from "./selectors";
 function App() {
   const dispatch = useDispatch();
 
-  const onScreen = useSelector(selectors.getOnScreen);
+  const question = useSelector(selectors.getNextQuestion);
+  const questionId = useSelector(selectors.getNextQuestionId);
+  const seansMood = useSelector(selectors.getSeansMood);
+  const gameState = useSelector(selectors.getGameState);
 
-  const MainContent = (onScreen === WELCOME) ? <Welcome /> : <Question />;
+  const displays = {
+    WELCOME: <Welcome handler={() => dispatch({ type: ACTIONS.Types.START_GAME })} />,
+    QUESTIONS: <Question handler={(value) => dispatch({ type: ACTIONS.Types.SELECT_ANSWER, data: { questionId, moodEffect: value } })} question={question} />,
+    GOODBYE: <h1>Bye</h1>,
+  };
 
   return (
-    <div className="App">
-      <section className="App-body">
-        <div>
-          <span role="img" aria-label="waving hand">👋</span>&nbsp;Code Quality POC
-        </div>
-        {MainContent}
-        <div>
-          <button onClick={() => dispatch({ type: ACTIONS.Types.START_GAME })}>
-            Start Game
-          </button>
-        </div>
-        <Sean />
-        <div className="App-secondary">Code repository</div>
-      </section>
+    <div className="App App-body">
+      <header>
+        <span role="img" aria-label="waving hand">👋</span>&nbsp;Code Quality POC
+        </header>
+      {displays[gameState]}
+      <Sean mood={seansMood} />
+      <footer className="App-secondary">Code repository</footer>
     </div>
   );
 }

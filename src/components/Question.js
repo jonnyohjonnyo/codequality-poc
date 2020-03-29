@@ -1,7 +1,16 @@
 import React from 'react';
 
-const Component = () => (
-    <h1>no</h1>
-);
-
+const Component = ({ question, handler }) => {
+    const { answers } = question;
+    const buttons = [];
+    answers.forEach((answer) => {
+        buttons.push(<button onClick={handler} key={answer.text}>{answer.text}</button>)
+    });
+    return (
+        <main>
+            <div>{question.text}</div>
+            {buttons}
+        </main>
+    );
+}
 export default Component;

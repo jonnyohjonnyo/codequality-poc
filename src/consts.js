@@ -1,5 +1,5 @@
-export const questions = {
-    QUESTION_1: {
+export const questions = [
+    {
         text: 'What is your favorite color?',
         answers: [
             {
@@ -12,6 +12,8 @@ export const questions = {
             }
         ]
     },
-};
+];
 
 export const WELCOME = 'WELCOME';
+export const QUESTIONS = 'QUESTIONS';
+export const GOODBYE = 'GOODBYE';

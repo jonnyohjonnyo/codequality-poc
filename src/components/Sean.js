@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Component = () => (
-    <h1>Sean</h1>
+const Component = ({ mood }) => (
+    <h1>{mood}</h1>
 );
 
 export default Component;

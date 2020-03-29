@@ -1,7 +1,11 @@
 import React from 'react';
 
-const Component = () => (
-    <h1>yo</h1>
+const Component = ({ handler }) => (
+    <main>
+        <button onClick={handler}>
+            Start Game
+          </button>
+    </main>
 );
 
 export default Component;
