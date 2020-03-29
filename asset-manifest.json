@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/codequality-poc/static/css/main.824ccbef.chunk.css",
-    "main.js": "/codequality-poc/static/js/main.93194cad.chunk.js",
-    "main.js.map": "/codequality-poc/static/js/main.93194cad.chunk.js.map",
+    "main.js": "/codequality-poc/static/js/main.00beb751.chunk.js",
+    "main.js.map": "/codequality-poc/static/js/main.00beb751.chunk.js.map",
     "runtime-main.js": "/codequality-poc/static/js/runtime-main.9e249b8d.js",
     "runtime-main.js.map": "/codequality-poc/static/js/runtime-main.9e249b8d.js.map",
     "static/js/2.175918a2.chunk.js": "/codequality-poc/static/js/2.175918a2.chunk.js",
     "static/js/2.175918a2.chunk.js.map": "/codequality-poc/static/js/2.175918a2.chunk.js.map",
     "index.html": "/codequality-poc/index.html",
-    "precache-manifest.c5e63e4b145b350c3d1ef9f9c870b576.js": "/codequality-poc/precache-manifest.c5e63e4b145b350c3d1ef9f9c870b576.js",
+    "precache-manifest.b36a18f8368fdf801848a732687a9205.js": "/codequality-poc/precache-manifest.b36a18f8368fdf801848a732687a9205.js",
     "service-worker.js": "/codequality-poc/service-worker.js",
     "static/css/main.824ccbef.chunk.css.map": "/codequality-poc/static/css/main.824ccbef.chunk.css.map",
     "static/js/2.175918a2.chunk.js.LICENSE.txt": "/codequality-poc/static/js/2.175918a2.chunk.js.LICENSE.txt",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.9e249b8d.js",
     "static/js/2.175918a2.chunk.js",
     "static/css/main.824ccbef.chunk.css",
-    "static/js/main.93194cad.chunk.js"
+    "static/js/main.00beb751.chunk.js"
   ]
 }
