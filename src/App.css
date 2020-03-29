@@ -52,13 +52,6 @@ button:hover {
   box-shadow: 0 0 10px 0 white inset, 0 0 10px 4px white;
 }
 
-button:focus {
-  color: #fff;
-  background-color: #3498db;
-  outline: 0;
-  box-shadow: 0 0 10px 0 white inset, 0 0 10px 4px white;
-}
-
 .start {
   display: flex;
   align-items: center;
