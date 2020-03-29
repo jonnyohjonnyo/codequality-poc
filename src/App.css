@@ -45,11 +45,13 @@ button {
   transition: all 150ms ease-in-out;
 }
 
-button:hover {
-  color: #fff;
-  background-color: #3498db;
-  outline: 0;
-  box-shadow: 0 0 10px 0 white inset, 0 0 10px 4px white;
+@media (min-width: 800px) {
+  button:hover {
+    color: #fff;
+    background-color: #3498db;
+    outline: 0;
+    box-shadow: 0 0 10px 0 white inset, 0 0 10px 4px white;
+  }
 }
 
 .start {
